@@ -1,0 +1,222 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background: linear-gradient(135deg,#07152d,#102d55,#1d4f91);
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+.container{
+
+    text-align:center;
+
+    width:90%;
+
+}
+
+.logo{
+
+    width:130px;
+
+    margin-bottom:30px;
+
+}
+
+h3{
+
+    font-size:24px;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
+
+}
+
+h1{
+
+    font-size:70px;
+
+    font-weight:bold;
+
+}
+
+h2{
+
+    margin-top:15px;
+
+    font-size:42px;
+
+}
+
+h4{
+
+    margin-top:15px;
+
+    font-size:32px;
+
+    color:#ffd54f;
+
+}
+
+.status-box{
+
+    margin:auto;
+
+    margin-top:60px;
+
+    width:500px;
+
+    max-width:90%;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    background:white;
+
+}
+
+.status{
+
+    color:#0d47a1;
+
+    font-size:32px;
+
+    font-weight:bold;
+
+}
+
+.screen{
+
+    display:none;
+
+}
+
+.active{
+
+    display:block;
+
+}
+
+#countNumber{
+
+    font-size:240px;
+
+    font-weight:900;
+
+    color:white;
+
+    text-shadow:
+
+        0 0 20px white,
+
+        0 0 50px cyan,
+
+        0 0 90px cyan;
+
+}
+
+.progress-container{
+
+    width:600px;
+    max-width:90%;
+    height:30px;
+
+    background:#1b3554;
+
+    border-radius:30px;
+
+    margin:40px auto;
+
+    overflow:hidden;
+
+}
+
+#progress-bar{
+
+    width:0%;
+
+    height:100%;
+
+    background:linear-gradient(90deg,#00d2ff,#3a7bd5);
+
+}
+
+#progress-text{
+    margin:15px 0 0 0;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+}
+
+#flash{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:white;
+    opacity:0;
+    pointer-events:none;
+    z-index:9999;
+}
+
+#screen-video{
+
+    background:#000;
+
+}
+
+#launchVideo{
+
+    width:100vw;
+    height:100vh;
+    object-fit:cover;
+
+}
+
+.status-box{
+
+    margin-top: 40px;
+    padding: 18px 40px;
+
+    display: inline-block;
+
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    border: 3px solid #00e5ff;
+    border-radius: 60px;
+
+    background: rgba(0, 229, 255, 0.15);
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 0 10px rgba(0,229,255,.4),
+        0 0 25px rgba(0,229,255,.5),
+        inset 0 0 15px rgba(255,255,255,.15);
+
+    animation: pulseStatus 2s ease-in-out infinite;
+
+}
